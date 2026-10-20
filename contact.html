@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ | Nguyễn Phúc Đức</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">WEB</span><span>Đề thi kết thúc học phần<small>Lập trình Web · Đề số 1</small></span></a>
+    <nav class="main-nav" aria-label="Menu chính">
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="contact.html" aria-current="page">Liên hệ</a>
+    </nav>
+    <span class="student-tag">MSSV: <strong>231A290087</strong></span>
+  </header>
+
+  <main class="page">
+    <a class="navback" href="index.html">← Về trang chủ</a>
+    <section class="panel">
+      <p class="eyebrow">CONTACT</p>
+      <h1>Liên hệ với tôi</h1>
+      <p>Nếu bạn có câu hỏi hoặc góp ý về website bài tập Lập trình Web, vui lòng để lại lời nhắn bên dưới.</p>
+
+      <div class="about-layout" style="grid-template-columns: minmax(110px, 150px) 1fr; align-items:center; margin:24px 0;">
+        <img class="avatar" src="images/avatar.jpg" alt="Ảnh đại diện Nguyễn Phúc Đức" style="max-width:150px">
+        <div>
+          <h2 style="margin-top:0">Nguyễn Phúc Đức</h2>
+          <p><strong>Mã số sinh viên:</strong> 231A290087</p>
+          <p><strong>Lớp:</strong> 231A2902</p>
+          <p><strong>Ngành học:</strong> Hệ thống thông tin</p>
+        </div>
+      </div>
+
+      <form id="contact-form" class="form-wrap">
+        <h2>Gửi lời nhắn</h2>
+        <label for="contact-name">Họ và tên</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="Nhập họ tên của bạn">
+
+        <label for="contact-email">Email</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="ban@example.com">
+
+        <label for="contact-message">Nội dung lời nhắn</label>
+        <textarea id="contact-message" name="message" rows="5" maxlength="1000" required placeholder="Nhập nội dung bạn muốn gửi..."></textarea>
+
+        <button type="submit">Gửi lời nhắn</button>
+        <p id="contact-status" class="muted" role="status" aria-live="polite"></p>
+        <p class="muted" style="font-size:13px">Lưu ý: Đây là form minh họa chạy trên trình duyệt, chưa gửi dữ liệu đến email hoặc máy chủ.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> Nguyễn Phúc Đức · Bài tập 24 · Lập trình Web</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
